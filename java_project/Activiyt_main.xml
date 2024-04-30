@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	
+
+	<RelativeLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_alingParentBottom="true"
+	android:id="@+id/idRLMsg"
+	>
+	<EditText
+		
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Enter your message"
+		android:textColorHint="@color/white"
+		android:id="@+id/idEdtMessage"
+		android:layout_margin="3dp"
+		android:layout_centerInParent="true"
+		android:layout_yoLeftOf="@id/idFABSend"
+		android:textColor="@color/white"
+		android:singleLine="true"
+	/>
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:src=""
+		android:id="@+id/idFABSend"
+		android:fabCustomize="45dp"
+		app:backgroundTint="@color/fab_color"
+		app:tint="@color/white"
+		android:layout_alignParentRight="true" />
+
+		
+	
+	<!-- <TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Hello World!"
+		app:lay_out_constraintBottom_toBottomOf="parent"
+		app:lay_out_constraintLeft_toLeftOf="parent"
+		app:lay_out_constraintRight_toRightOf="parent"
+		app:lay_out_constraintTop_toTopOf="parent" />	 -->
+
+</android.constraintlayout.widget.ConstraintLayout>
